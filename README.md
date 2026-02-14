@@ -1,103 +1,155 @@
-📊 E-Commerce Customer Churn Analysis
+Customer Retention & Revenue Optimization Analytics
 
-Skills Stack: Advanced Excel (RFM Modeling, Pivot Tables, Conditional Logic), Power BI (DAX, KPI Dashboarding), Customer Segmentation, Business KPI Analysis, Retention Strategy Design
+End-to-End Food Delivery Customer Intelligence Case Study
 
-📌 Executive Summary
+📌 Project Overview
 
-Analyzed transactional data of 5,000+ customers to identify churn behavior patterns using RFM modeling and dashboard analytics.
+This project develops a structured customer intelligence framework to evaluate retention performance, churn risk, and revenue exposure for a food delivery platform.
 
-Identified a churn rate of 28%, with mid-frequency customers contributing the highest churn volume.
+The solution integrates:
 
-Delivered actionable retention strategies targeting high-value at-risk customers to prevent potential revenue loss.
+RFM Segmentation
 
-🎯 Business Problem
+Churn Risk Modeling (90-day inactivity logic)
 
-The company experienced a decline in repeat purchases over two consecutive quarters.
+Revenue-at-Risk Quantification
 
-Management required:
+Promotional Impact Analysis
 
-Early identification of churn-risk customers
+Monthly Revenue Trend Forecasting
 
-Revenue exposure estimation
+Interactive Power BI Dashboard
 
-Behavioral drivers of churn
+The objective is to transform raw transactional data into actionable business insights.
 
-Strategic retention recommendations
+📊 Business Problem
 
-📁 Data Overview
+Food delivery platforms experience customer churn that directly impacts revenue stability.
 
-Dataset: 5,000+ transaction records
-Time Period: 12 months
+Key questions addressed:
 
-Key variables:
+What is the overall churn rate?
 
-Customer_ID
+Which customer segments generate the highest revenue?
 
-Order_Date
+How much revenue is at risk due to churn?
 
-Order_Value
+Do promotional users churn less?
 
-Product_Category
+Which risk tiers require immediate intervention?
 
-Discount_Applied
+🧠 Analytical Approach
 
-City
+1️⃣ Data Preparation (Excel)
 
-📊 Analysis Framework
+Cleaned and structured transaction-level order data
 
-1️⃣ RFM Modeling
+Generated customer-level aggregation
 
-Recency: Days since last purchase
+Created calculated fields for Revenue, Frequency, and Recency
 
-Frequency: Total transactions per customer
+2️⃣ RFM Segmentation Model
 
-Monetary: Total revenue contribution
+Customers were scored using:
 
-2️⃣ Churn Classification
+Recency (Last order gap)
 
-Customers inactive for >90 days labeled as churned.
+Frequency (Order count)
 
-3️⃣ Segmentation & KPI Analysis
+Monetary (Total spend)
 
-Churn rate by category
+Segments identified:
 
-Revenue loss due to churn
+Champions
 
-Discount dependency patterns
+Loyal Customers
 
-Geographic churn clusters
+Potential Loyalists
+
+At Risk
+
+Recent Customers
+
+3️⃣ Churn Definition
+
+Churn was defined as:
+
+Customers inactive for more than 90 days from analysis date.
+
+4️⃣ Revenue at Risk Analysis
+
+Revenue exposure calculated by isolating churned customers' contribution to total revenue.
+
+5️⃣ Promotional Impact Evaluation
+
+Churn rates compared between:
+
+Promo Users
+
+Non-Promo Users
+
+6️⃣ Sales Trend Forecasting
+
+3-Month Moving Average applied to identify revenue patterns and seasonality.
+
+7️⃣ Power BI Dashboard Development
+
+Interactive dashboard built to visualize:
+
+KPI metrics
+
+Monthly revenue trends
+
+Segment-wise revenue contribution
+
+Risk-tier distribution
+
+Churn status breakdown
+
+Geographic revenue distribution
 
 📈 Key Insights
 
-Overall churn rate: 28%
+Total Customers: 588
 
-42% of churned customers belonged to mid-frequency segment
+Churned Customers: 234
 
-High-discount customers had 1.4x higher churn probability
+Churn Rate: 39.8%
 
-Electronics category showed 35% churn rate (highest)
+Revenue at Risk: 28.5% of total revenue
 
-18% potential revenue exposure from high-monetary inactive customers
+Revenue concentration skewed toward Champions and Loyal Customers
 
-🧠 Business Decisions Enabled
+High churn concentration in Moderate & Low Risk tiers
 
-✔ Targeted re-engagement for customers inactive 60–90 days
-✔ Reduced blanket discounting strategy
-✔ Loyalty program for mid-frequency customers
-✔ Category-specific retention campaigns
+🛠 Tools Used
 
-📊 Deliverables
+Microsoft Excel (Data Modeling & RFM Engine)
 
-Interactive Power BI Dashboard with:
+Power BI (Dashboard Development)
 
-KPI Cards
+DAX (Custom Measures & KPI Calculations)
 
-Churn Segmentation
+📂 Repository Structure
 
-Revenue Exposure Analysis
+1_data/ → Raw dataset  
 
-Behavioral Scatter Plot
+2_excel_model/ → RFM & churn calculation engine  
 
-📌 Strategic Impact
+3_powerbi_dashboard/ → Interactive BI dashboard  
 
-This framework enables proactive retention management and can reduce churn by an estimated 8–12% when implemented effectively.
+4_dashboard_preview/ → Dashboard screenshots  
+
+5_documentation/ → Project methodology documentation  
+
+🎯 Business Impact
+
+This project demonstrates how structured customer analytics can:
+
+Quantify revenue exposure
+
+Identify high-value retention targets
+
+Prioritize intervention segments
+
+Support strategic decision-making.
